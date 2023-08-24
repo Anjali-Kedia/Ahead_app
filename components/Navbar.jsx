@@ -1,11 +1,11 @@
 import Image from 'next/image'
-
+import logo from '../assets/logo.png'
 export default function Navbar() {
   return (
- <nav className="bg-white   w-full z-20 top-0 left-0 ">
+ <nav className="bg-white sticky  w-full z-20 top-0 left-0 ">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="https://flowbite.com/" className="flex items-center">
-      <Image src="https://flowbite.com/docs/images/logo.svg" width={50} height={100} className="h-8 mr-3" alt="Ahead Logo"/>
+      <Image src={logo} width={50} height={250} className="mr-3" alt="Ahead Logo"/>
   </a>
   <div className="flex md:order-2">
       <button type="button" className="text-white bg-black hover:bg-grey rounded-full text-sm px-4 py-3 text-center mr-3 md:mr-0 ">Download app</button>

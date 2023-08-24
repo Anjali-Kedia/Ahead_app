@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Hero } from '../components';
+import { Emoq, Hero, Navbar } from '../components';
 
 
 export default function Home() {
@@ -11,6 +11,10 @@ export default function Home() {
     //   <Hero />
 
     // </section>
+    <>
+    <Navbar/>
     <Hero/>
+    <Emoq/>
+    </>
   )
 }
