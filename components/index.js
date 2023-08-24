@@ -1,8 +1,10 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
-import Emoq from "./emoq";
+import Emoq from "./Emoq";
+import Carousel from "./Carousel";
 export{
     Navbar,
     Hero,
-    Emoq
+    Emoq,
+    Carousel
 }
