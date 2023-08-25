@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Carousel, Emoq, Hero, Navbar } from '../components';
+import { Carousel, Emoq, Hero, Navbar, Selfimp } from '../components';
 
 
 export default function Home() {
@@ -16,6 +16,8 @@ export default function Home() {
     <Hero/>
     <Emoq/>
     <Carousel/>
+    <Selfimp/>
+    
     </>
   )
 }
