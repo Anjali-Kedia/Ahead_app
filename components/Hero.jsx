@@ -4,6 +4,11 @@ import Image from 'next/image';
 import right_base from '../assets/rightbase.png'
 import SlideIn from '../components/SlideIn'
 import ImageScrollEffect from './ImageScrollEffect';
+import phone1 from '../assets/phone1.png'
+import redg from '../assets/redg.png'
+import blueg from '../assets/blueg.png'
+import pinkg from '../assets/pinkg.png'
+import '../app/globals.css'
 
 const Hero = () => {
   return (
@@ -37,11 +42,28 @@ const Hero = () => {
         
       </div>
       
-      <div className='basis-1/2 pl-16 pt-20'>
-        <Image src={right_base} width={600} height={500}/>
-        
+      <div className='flex basis-1/2 pl-16 pt-20'>
+        <div className="absolute z-0"><Image className="z-0" src={right_base} width={600} height={500}/></div>
+        <div className='z-10 pl-56 pt-24 absolute '><Image src={phone1} alt="phone1" width={200} height={200}/></div>
+        <div className='relative z-10 mr-80 mt-96 scale-120'>
+        <div className="circular-animation">
+          <Image src={redg} alt="redg" width={70} height={40} />
+        </div>
       </div>
-      
+
+      <div className='relative z-10 mr-40 mt-10'>
+  <div className="circular-animation">
+    <Image src={blueg} alt="blueg" width={70} height={40} />
+  </div>
+</div>
+
+<div className='relative z-10 mt-60'>
+  <div className="circular-animation">
+    <Image src={pinkg} alt="pinkg" width={70} height={40} />
+  </div>
+</div>
+
+      </div>
     </div>
 
    

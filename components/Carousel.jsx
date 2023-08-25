@@ -1,5 +1,6 @@
 'use client'
 import { motion, useTransform, useScroll } from "framer-motion";
+import SlideInText from "./SlideIn";
 import { useRef } from "react";
 import Image from "next/image";
 import e1 from '../assets/pngegg-2.png'
@@ -11,9 +12,11 @@ import e5 from '../assets/pngegg-6.png'
 const Carousel = () => {
   return (
     <div>
+      <SlideInText>
         <div className="ml-8">
             <h1 className="pl-16 text-6xl font-bold">Does this sound familiar...</h1>
         </div>
+        </SlideInText>
       <HorizontalScrollCarousel />
       </div>
      
