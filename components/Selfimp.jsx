@@ -1,6 +1,6 @@
 'use client'
 import React, { useRef } from 'react';
-import { motion, useScroll } from 'framer-motion';
+// import { motion, useScroll } from 'framer-motion';
 import "../app/globals.css";
 import SlideIn from './SlideIn';
 
@@ -8,6 +8,7 @@ const Item = ({info}) => {
     return(
         <div 
         key={info.key}
+
         className=' flex flex-row justify-center textcheck '>
             <div className=' flex basis-1/2 justify-end pr-6'>
 
@@ -27,7 +28,7 @@ const Item = ({info}) => {
 
 const Selfimp = () => {
   return (
-    <div className="mr-8 ml-8">
+    <div className="mr-8 ml-8 mb-36">
     <SlideIn>
     <div className="pl-16">
       <h1 className="pb-4 text-lg">
