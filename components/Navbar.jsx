@@ -2,6 +2,7 @@ import Image from 'next/image'
 import logo from '../assets/logo.png'
 export default function Navbar() {
   return (
+    
  <nav className="bg-white sticky  w-full z-20 top-0 left-0 ">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="#" className="flex items-center">
